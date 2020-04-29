@@ -1,5 +1,7 @@
 package com.first;
 
+import javax.crypto.spec.PSource;
+
 public class Application2 {
     public static void main(String[] args) {
         //use conditions "if" and  "case"
@@ -73,13 +75,51 @@ public class Application2 {
         } else {
             System.out.println("!=30");
         }
-
-        // Create 2 different strings. Compare them with usage if ternary operator
-        // and print "Not equal", "Equal" and explain
+        // Create 2 different strings. Compare them with usage if ternary operator and print "Not equal", "Equal" and explain
+        String loginFromRequest = "manager";
+        String loginFromDB = "accountant";
+        String login = loginFromRequest == loginFromDB ? "Valid login": "Access denied";
+        System.out.println(login);
+        //Access denied
+        String child1 = "boy";
+        String child2 = "girl";
+        String child = child1 == child2 ? "Equal" : "Not equal";
+        System.out.println(child);
         // Explain difference betweeb &,|,&&,|| and provide example.
+        int age1 = 10;
+        long age2 = 98;
+        float money1 = 5000.00f;
+        double money2 = 1500400.00;
+        if (age1 > 0 & age2 > 0) {
+            System.out.println("greater 0");
+            } else {
+            System.out.println(0);
+        }
+        if (age1 <= 5 & age2 >= 100) {
+            System.out.println("oops!");
+            } else {
+            System.out.println(false);
+        }
+        if (age1 <= 5 && age2 >= 100) {
+            System.out.println("oops!");
+        } else {
+            System.out.println(false);
+        }
+       if (money1 <= 100 | money2 > 1000000 | age1 == 100) {
+           System.out.println("There are some money");
+       } else {
+           System.out.println("None");
+       }
+        if (money1 <= 100 || money2 > 1000000 || age1 == 100) {
+            System.out.println("There are some money");
+        } else {
+            System.out.println("None");
+        }
+    }
         // Create 2 string variables with same value but initialize one with literal and another with constructor.
+
+
         // (String a ="lalala";         	String b = new String("lalala");)
         // Compare this values with usage of == and equal. Explain result
 
     }
-}
