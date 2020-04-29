@@ -78,7 +78,7 @@ public class Application2 {
         // Create 2 different strings. Compare them with usage if ternary operator and print "Not equal", "Equal" and explain
         String loginFromRequest = "manager";
         String loginFromDB = "accountant";
-        String login = loginFromRequest == loginFromDB ? "Valid login": "Access denied";
+        String login = loginFromRequest == loginFromDB ? "Valid login" : "Access denied";
         System.out.println(login);
         //Access denied
         String child1 = "boy";
@@ -92,12 +92,12 @@ public class Application2 {
         double money2 = 1500400.00;
         if (age1 > 0 & age2 > 0) {
             System.out.println("greater 0");
-            } else {
+        } else {
             System.out.println(0);
         }
         if (age1 <= 5 & age2 >= 100) {
             System.out.println("oops!");
-            } else {
+        } else {
             System.out.println(false);
         }
         if (age1 <= 5 && age2 >= 100) {
@@ -105,21 +105,43 @@ public class Application2 {
         } else {
             System.out.println(false);
         }
-       if (money1 <= 100 | money2 > 1000000 | age1 == 100) {
-           System.out.println("There are some money");
-       } else {
-           System.out.println("None");
-       }
+        if (money1 <= 100 | money2 > 1000000 | age1 == 100) {
+            System.out.println("There are some money");
+        } else {
+            System.out.println("None");
+        }
         if (money1 <= 100 || money2 > 1000000 || age1 == 100) {
             System.out.println("There are some money");
         } else {
             System.out.println("None");
         }
-    }
         // Create 2 string variables with same value but initialize one with literal and another with constructor.
-
-
-        // (String a ="lalala";         	String b = new String("lalala");)
+        String var1 = "circle";
+        String var2 = new String(var1);
+        String var3 = var1;
         // Compare this values with usage of == and equal. Explain result
+        if (var2 == var1) {
+            System.out.println(var1);
+        } else {
+            System.out.println(false);
+        }
+        if (var3 == var1) {
+            System.out.println(var1);
+        } else {
+            System.out.println(false);
+        }
+        if (var3 == var2) {
+            System.out.println(var2);
+        } else {
+            System.out.println(false);
+        }
+        System.out.println(var1.equals(var2));
+        System.out.println(var1.equals(var3));
+        System.out.println(var3.equals(var2));
 
     }
+}
+
+
+
+
