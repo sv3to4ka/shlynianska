@@ -139,7 +139,7 @@ public class Application2 {
         System.out.println(var1.equals(var3));
         System.out.println(var3.equals(var2));
 
-    }
+          }
 }
 
 
