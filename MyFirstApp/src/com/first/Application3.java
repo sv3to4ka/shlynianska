@@ -1,6 +1,9 @@
 package com.first;
 
 public class Application3 {
+
+    public static String name = "123";
+
     public static void main(String[] args) {
         //use cycles "for","while","foreach"Cycle operators.Create for, while, do while cycles that iterate 10 times
         // and print iteration number to console;
@@ -52,19 +55,40 @@ public class Application3 {
             }
         } while (++n < weekDays.length);
 
+        //Infinite Loop
+        int d = 0;
+        String[] p = new String[8];
+        while (d > p.length) {
+         p[d] = "Pupil " + (d+1);
+         System.out.println(p[d]+ " is working at the desk #" + (d+1));
+            d++;
+        }
 
-        System.out.println(fibonacci(100.00f));
+        System.out.println(dividedleaf(100.00f));
+        System.out.println(geoprg(2));
     }
 
     //Create recursion with exit condition
-    private static float fibonacci(float l) {
+    private static float dividedleaf(float l) {
         int de = 2;
         float division = l / de;
         if (division >= 1) {
-            division = fibonacci(division);
+            division = dividedleaf(division);
         }
         return division;
     }
+    //Recursion without exit condition
+    private static int geoprg(int denominator) {
+        int n = 2;
+        int x = (n-1) * denominator;
+        int maxlenght = 100;
+        if (x <= maxlenght) {
+            x = geoprg(x);
+        }
+        return x;
+
+    }
+
 }
 
 
