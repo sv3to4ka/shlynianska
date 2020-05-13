@@ -107,5 +107,21 @@ public class Application4 {
         for (Map.Entry<String, String> entry : body.entrySet()) {
             System.out.println("key: " + entry.getKey() + ", value: " + entry.getValue());
         }
+        //get method
+        System.out.println(fruit.get(0));
+        System.out.println(fruit.get(1));
+        String a = fruit.get(0);
+        System.out.println(a);
+        String b = vegetables.get(1);
+        System.out.println(b);
+        System.out.println(body.get("Eyes"));
+        System.out.println(body.get("eyes"));
+        System.out.println(body.get("Makeup")); //only by key
+        String c = bodyParts.get("Leg");
+        System.out.println(c);
+        System.out.println(doing1.contains("smell"));
+        System.out.println(doing2.contains("run"));
+        System.out.println(doing3.contains("look at"));
+
     }
 }
